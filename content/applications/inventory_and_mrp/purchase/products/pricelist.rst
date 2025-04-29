@@ -1,61 +1,53 @@
 =======================
-Import vendor pricelist
+Importación de precios de proveedor
 =======================
 
-Set vendor prices to auto-populate requests for quotations (RFQs) or purchase orders (POs) with the
-unit price, once the product is added, which reduces errors and saves time.
+Configure precios de proveedor para llenar de forma automática las solicitudes de presupuestos (RFQ, Requests for Quotations) u órdenes de compra (PO’s, Purchase Orders) con el precio unitario una vez que se añada el producto, reduciendo errores y ahorrando tiempo.
 
-In Odoo, vendor pricelists can be :ref:`added individually <purchase/products/pricelist>` on the
-product form, or :ref:`imported in bulk <purchase/products/import-pricelist>`, via an XLSX or CSV
-file.
+En Odoo, las listas de precio de proveedor pueden añadirse de forma individual en el formulario de proveedor, o se pueden importar de forma masiva con un archivo XLSX o CSV.
 
-.. important::
-   Please review this :doc:`import guide <../../../essentials/export_import_data>` before uploading
-   vendor pricelists.
+.. Importante::
+   Por favor, revise este :doc:`import guide <../../../essentials/export_import_data>` antes de cargar listas de precios de proveedor.
 
 .. _purchase/products/pricelist:
 
-On product form
+En el formulario de producto
 ===============
 
-To manually add the vendor price on the product form, go to the :menuselection:`Purchase app -->
-Products --> Products`, and click the desired product.
+Para añadir el precio de proveedor a un producto desde el formulario, de forma manual, vaya a la aplicación :menuselection:`Compra --> Productos --> Productos`, y haga click en los productos deseados.
 
-.. note::
-   Product forms are accessible from multiple apps, such as **Sales**, **Inventory**, and
-   **Manufacturing**.
+.. Nota::
+   Los formularios de Producto son accesibles desde múltiples aplicaciones, como **Ventas**, **Inventario**, and
+   **Fabricación**.
 
-In the :guilabel:`Purchase` tab of the product form, input the vendor and their price, to have this
-information auto-populate on a request for quotation each time the product is listed.
+En la pestaña :guilabel:`Compra` del formulario de Producto, añada a los proveedores y sus precios, para tener esta información cumplimentada automáticamente en una solicitud de precupuesto cada vez que se elija ese producto.
 
-.. seealso::
-   :ref:`Vendor pricelist on product form <purchase/manage_deals/vendor-pricelist>`
+.. Ver también::
+   :ref:`Lista de precios de proveedor en formulario Producto <purchase/manage_deals/vendor-pricelist>`
 
 .. image:: pricelist/product-form-pricelist.png
    :alt: Vendor pricelist on product form.
 
 .. _purchase/products/import-pricelist:
 
-Import vendor pricelist
+Importar lista de precios de proveedor
 =======================
 
-To import vendor pricelists, ensure the XLSX or CSV file is accurately completed. The best way to
-obtain a correctly formatted template, including product names, references, and vendor details, is
-to first :ref:`export a pricelist <purchase/products/export-price>` from the database.
+Para importar listas de precio de proveedor, asegúrese de que los archivos XLSX o CSV sean correctos. La mejor manera de obtener una plantilla con el formato correcto, incluyendo nombres de producto, referencias y detalles de proveedor es primero :ref:`export a pricelist <compras/productoss/exportar-precios>` desde la base de datos
 
-Modify the exported file, as needed, then import it back into the Odoo database.
+Realice las modificaciones necesarias al archivo exportado, después impórtelo de nuevo a la base de datos de Odoo.
 
-.. _purchase/products/export-price:
+.. _compras/productoss/exportar-precios:
 
-Export pricelist
+Exportar lista de precios
 ----------------
 
-To export a pricelist, go to :menuselection:`Purchase app --> Configuration --> Vendor Pricelists`.
+Para exportar una lista de precios, vaya a :menuselection:`Compras --> Configuración --> Lista de precios de proveedor`.
 
-On the page, tick the checkbox(es) for the desired vendor pricelists.
+En la página, marque la o las casillas de verificación para la lista de precios de proveedor.
 
-Then, click the :icon:`fa-cog` :guilabel:`Actions` button that appears, and choose :icon:`fa-upload`
-:guilabel:`Export` from the drop-down menu.
+Después, haga click en el botón :icon:`fa-cog` :guilabel:`Acciones` que aparece, y seleccione :icon:`fa-upload`
+:guilabel:`Exportar` del menú desplegable.
 
 .. image:: pricelist/export.png
    :alt: Show selected exported fields, with the Export button visible.
